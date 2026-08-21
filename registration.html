@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+
+</head>
+<body>
+    <main>
+    <!-- Form -->
+    <form action="submit.php">
+        <!-- Name -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <br><br>
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <br><br>
+        <!-- Password -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        <br><br>
+        <!-- Date of Birth -->
+        <label for="date-of-birth">Date of Birth:</label>
+        <input type="date" id="date-of-birth" name="date-of-birth" placeholder="Select your date of birth" required>
+        <br><br>
+        <!-- Gender -->
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label>
+        <br><br>
+        <!-- Favorite Programming Language -->
+        <label for="fav-lang">Favorite Programming Language:</label>
+        <input type="checkbox" id="fav-lang" name="fav-lang" value="CSS" required>
+        <label for="fav-lang">CSS</label>
+        <input type="checkbox" id="fav-lang" name="fav-lang" value="javascript" required>
+        <label for="fav-lang">JavaScript</label>
+        <input type="checkbox" id="fav-lang" name="fav-lang" value="html" required>
+        <label for="fav-lang">HTML</label>
+        <br><br>
+        <!-- City -->
+        <label for="city">City:</label>
+        <select name="city" id="city" required>
+            <option value="lahore">Lahore</option>
+            <option value="islamabad">Islamabad</option>
+            <option value="karachi">Karachi</option>
+            <option value="faisalabad">Faisalabad</option>
+        </select>
+        <br><br>
+        <!-- About Me -->
+        <label for="bio" style="vertical-align: top;">About Yourself:</label>
+        <textarea id="bio" name="bio" rows="5" cols="40" required placeholder="Tell us about yourself..."></textarea>
+        <br><br>
+        <!-- Submit and Reset Buttons -->
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+    </main>
+</body>
+</html>
