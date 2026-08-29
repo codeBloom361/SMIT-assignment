@@ -4,24 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Introduction</title>
+    <style>
+        *{
+            width: 95%;
+        }
+        h2, p, ul, ol {
+            font-size: 19px;
+            font-family: Arial, sans-serif;
+            text-align: justify;
+        }
+        h1, h2, h3{
+            color: pink;
+        }
+        .hobbies{
+            list-style-type: square;
+        }
+        #goals{
+            list-style-type: upper-latin;
+        }
+    </style>
 </head>
 <body>
     <main>
     <!-- Main Content -->
-    <h1>Sania Saleem</h1>
+    <h1 style="color: pink; font-size: 3em;">Sania Saleem</h1>
     <h2>About Me:</h2>
     <p>I am a student currently persuing my degree in Biotechnology. I am also learning web development to upgrade my skillset. I am interested in science and technology and looking forward to building my career.</p>
     <h3>Why I am interested in learning web development?</h3>
     <p>I am interested in web development because I like the idea of turning an idea into a functional website. Web development allows me to combine creativitywith problem-solving and gives me the opportunity to continuously learn new technologies. I enjoy building interactive and user-friendly websites that can make a real impact.</p>
     <!-- Hobbies and Goals section -->
      <h3>Hobbies:</h3>
-    <ul>
+    <ul class="hobbies">
         <li>Coding</li>
         <li>Workouts</li>
         <li>Reading</li>
     </ul>
     <h3>Goals:</h3>
-    <ol>
+    <ol id="goals">
         <li>Build and deploy my first full-stack web application.</li>
         <li>Become confident enough to contribute to a real development team.</li>
         <li>Build a portfolio of projects that showcase my skills.</li>

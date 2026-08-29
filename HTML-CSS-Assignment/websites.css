@@ -1,0 +1,74 @@
+/* Import font family */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* Webpage Background */
+body {
+    background-color: #f0f4f8;
+    font-family: 'Inter', sans-serif;
+    color: #333333;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+/* Main Heading Styling */
+h1 {
+    color: #1e293b;
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    border-bottom: 3px solid #3b82f6;
+    display: inline-block;
+    padding-bottom: 0.25rem;
+}
+
+/* Links Styled Container */
+.links-container {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+/* Links Appearance, Font, & Display */
+.links-container a {
+    display: inline-block;
+    color: #2563eb;
+    background-color: #eff6ff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 0.6rem 1.2rem;
+    margin: 0.4rem 0.5rem 0.4rem 0;
+    border-radius: 0.5rem;
+    border: 1px solid #bfdbfe;
+}
+
+/* Interactive link states */
+.links-container a:hover {
+    background-color: #2563eb;
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+/* Image Styling */
+.github-img {
+    width: 180px;
+    height: 180px;
+    padding: 0.75rem;
+    border: 2px solid #cbd5e1;
+    margin: 1.5rem 0;
+    border-radius: 50%; 
+    background-color: #ffffff;
+    object-fit: cover; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+.github-img:hover {
+    background-color: #7295e1;
+    transition: background-color 0.3s ease-in-out;
+    transform: scale(1.05);
+}

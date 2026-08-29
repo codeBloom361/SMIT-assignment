@@ -4,31 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Marks</title>
-    <!-- CSS Styling for the table -->
-    <style>
-        table {
-            width: 90%;
-            border-collapse: collapse;
-        }
-        th{
-            border-bottom: 2px solid black;
-            text-align: left;
-        }
-        td {
-            border-bottom: 1px solid black;
-            padding: 8px;
-            text-align: left;
-        }
-        caption{
-            padding-bottom: 20px;
-            font-weight: bold;
-        }
-        </style>
+    <link rel="stylesheet" href="marks.css">
 </head>
 <body>
     <main>
     <!-- Table -->
-    <table>
+    <table id="student-table">
      <!-- Table Caption -->
      <caption>HTML and CSS Marks of Students</caption>
      <!-- Table Head -->
@@ -38,7 +19,7 @@
                 <th>Student Name</th>
                 <th>HTML</th>
                 <th>CSS</th>
-                <th>Total</th>
+                <th class="total-col">Total</th>
             </tr>
         </thead>
         <!-- Table Body -->
@@ -48,28 +29,28 @@
             <td>Ali</td>
             <td>80</td>
             <td>75</td>
-            <td>155</td>
+            <td class="total-col">155</td>
         </tr>
         <tr>
             <td>102</td>
             <td>Sara</td>
             <td>90</td>
             <td>85</td>
-            <td>175</td>
+            <td class="total-col">175</td>
         </tr>
         <tr>
             <td>103</td>
             <td>Ahmed</td>
             <td>70</td>
             <td>80</td>
-            <td>150</td>
+            <td class="total-col">150</td>
         </tr>
         <tr>
             <td>104</td>
             <td>Ayesha</td>
             <td>95</td>
             <td>90</td>
-            <td>185</td>
+            <td class="total-col">185</td>
         </tr>
         </tbody>
     </table>

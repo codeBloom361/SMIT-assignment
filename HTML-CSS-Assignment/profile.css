@@ -1,0 +1,196 @@
+/* Universal Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Typography & Body */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f6f8;
+  color: #2d3748;
+  min-height: 100vh;
+}
+
+/* Header Section */
+header {
+  position: relative; 
+  background-color: #522157bd;
+  color: #ffffff;
+  text-align: center;
+  padding: 2.5rem 1rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+header .subtitle {
+  font-size: 1.1rem;
+  color: #cbd5e0;
+  font-weight: 400;
+}
+
+/* Badge inside Header */
+#availability-badge {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background-color: #38a169;
+  color: #ffffff;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 20px;
+}
+
+/* Navigation*/
+nav {
+  background-color: #ae53b6a5;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 2rem;
+  padding: 0.8rem 0;
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.nav-links a:hover {
+  color: #bee3f8;
+}
+
+/* Layout Container */
+.main-container {
+  display: flex; 
+  flex-direction: row;
+  gap: 2rem;
+  width: 90%;
+  max-width: 1100px;
+  margin: 2rem auto;
+}
+
+/* Content Columns */
+.primary-content {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.sidebar {
+  flex: 1;
+  height: fit-content;
+}
+
+/* Card Styling */
+.card {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  color: #b551c07f;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #edf2f7;
+  padding-bottom: 0.4rem;
+}
+
+/* About Section */
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #bd5ab6cc;
+  object-fit: cover;
+}
+
+/* Skills List */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  list-style: none;
+}
+
+
+#skills .skill-item {
+  background-color: #ca79be50;
+  color: #b54ec2;
+  border: 1px solid #b35bbbc5;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* Sidebar Elements */
+.aside-group {
+  margin-bottom: 1rem;
+}
+
+.aside-group h3 {
+  font-size: 1rem;
+  color: #4a5568;
+  margin-bottom: 0.2rem;
+}
+
+/* Footer Section */
+footer {
+  background-color: #522157bd;
+  color: #d4dde9;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
+
+.contact-link {
+  color: #c05ec9f4;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+  }
+
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #availability-badge {
+    position: static;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+  }
+}
